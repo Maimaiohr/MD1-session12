@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fruit = ["kiwi", "peach", "cherry", "coconut","mango","banana"];
+        var n = prompt("Nhap trai cay ban yeu thich");
+        var check = -1;
+        for (var i = 0; i < fruit.length; i++) {
+            if (fruit[i] === n) {
+                check = i;
+                break;
+            }
+        }
+        if (check!=-1) {
+            // in ra vi tri phan tu 
+            document.write(`${n} o vi tri ${check} trong list`)
+        } else {
+            document.write(`phần tử không tồn tại`)
+        }
+    </script>
+</body>
+</html>

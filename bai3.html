@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var array = [1, 2, 3, 5, 2, 6, 7, 8, 2, 5, 3, 1, 8, 9, 0, 6, 9, 0, 1, 7, 2, 5, 3];
+        var n = +prompt("Nhap so nguyen tu 0-9");
+        count_array(array,n)
+        function count_array(arr, n){
+            var count = 0;
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] ==n) {
+                    count++
+                }
+            }
+            document.write("phan tu n xuat hien " + count + "lan");
+        }
+    </script>
+</body>
+
+</html>

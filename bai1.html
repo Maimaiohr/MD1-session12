@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = [`a`, 2, 3, `m`, "l", 0, 8, `apple`];
+        var ischeck = false;
+
+        for(var i=0; i<n.length;i++){
+            var temp = Number(n[i]);
+            if(!Number.isNaN(temp)){
+                icheck = true;
+                document.write(temp);
+            }
+        }
+        if(!icheck){
+            document.write("So nguyen khong ton tai")
+        }
+
+    </script>
+</body>
+
+</html>
